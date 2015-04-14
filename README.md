@@ -1,0 +1,1 @@
+This is the source code to go along with the PhoneGap/Cordova tutorial on developing a cross-platform Twitter app.
