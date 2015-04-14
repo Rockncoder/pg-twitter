@@ -24,4 +24,11 @@ rnc.router = function () {
 rnc.resolver.initialize(function () {
     rnc.router();
     console.info("The app is initialized");
+
+    rnc.Event.on('rnc_tweets_authorized', function (evt) {
+        rnc.Collections.tweets.fetch();
+    });
+
+    rnc.Collections.tweets = new rnc.Collections.Tweets();
+
 });
